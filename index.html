@@ -455,7 +455,7 @@
       btn.innerHTML = '<i data-lucide="chevron-down"></i> Show more (' + (items.length - 2) + ')';
       btn.setAttribute('aria-expanded', 'false');
 
-      let expanded = false;
+      let expanded = true;
       btn.addEventListener('click', () => {
         expanded = !expanded;
         items.forEach((li, i) => {
