@@ -448,11 +448,11 @@
       const items = job.querySelectorAll('li');
       if (items.length <= 2) return;
 
-      items.forEach((li, i) => { if (i >= 2) li.classList.add('hidden-bullet'); });
+      // items.forEach((li, i) => { if (i >= 2) li.classList.add('hidden-bullet'); });
 
       const btn = document.createElement('button');
       btn.className = 'toggle-bullets';
-      btn.innerHTML = '<i data-lucide="chevron-down"></i> Show Less';
+      btn.innerHTML = '<i data-lucide="chevron-up"></i> Show Less';
       btn.setAttribute('aria-expanded', 'true');
 
       let expanded = true;
